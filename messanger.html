@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        
+         .ab{
+            background-color:black;
+            height: 50px;
+            width:380px;
+            position: fixed; 
+            top: 0px; 
+          
+         }
+         .arrow{
+            font-size: 23px;
+            margin-top: -33px;
+            margin-left: 5px;
+            color:blueviolet;
+            position: sticky;
+            top: 0px;
+         }
+         .video{
+            font-size: 25px;
+            color:blueviolet;
+            margin-top: -25px;
+            margin-left: 290px;
+            position: sticky;
+            top: 0px;
+         }
+         .call{
+            font-size: 25px;
+            color: blueviolet;
+            margin-top:-26px;
+            margin-left: 250px;
+            position: sticky;
+            top:0px;
+         }
+        .dp{
+            margin-top:-48px;
+            margin-left: 30px;
+            position: sticky;
+            top:0px;
+        }
+        .info{
+            margin-left: 330px;
+            color:blueviolet;
+            margin-top: 9px; 
+            position: sticky; 
+            font-size:25px;
+            position: fixed;
+        }
+        .name{
+            color: aliceblue;
+            margin-top: -20px;
+            margin-left: 80px;
+            font-size: 20px;
+           position: sticky;
+           top: 0px;
+        }
+        .dp2{
+            margin-top: 90px;
+            margin-left: 140px;
+        }
+        .text1{
+            margin-left: 135px;
+            margin-top: 15px;
+           
+        }
+        .text2{
+            margin-left: 170px;
+            font-size: 15px;
+        }
+        .text3{
+            margin-left: 130px;
+            color: darkgrey;
+            font-size: 13px;
+        }
+        .text4{
+            margin-left: 150px;
+            margin-top: 10px;
+            font-size: 12px;
+            background-color:darkgray;
+            width: 100px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .dp1{
+            margin: left 120px;
+        }
+        .md{
+            height: 500px;
+            width:400px;
+            overflow-y: scroll;
+    
+        }
+        .d1,.d2,.d3,.d4{
+            text-align: center;  
+            margin-left: 10px;
+            margin-top: 30px;
+            border-radius: 20px;
+            font-size: 10px;
+            color: darkgray;
+            position: sticky;
+            
+            }
+        .cd1{
+            background-color:darkslategray;
+            width: 30px;
+            text-align: center;
+            margin-left: 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+            
+        }
+        .cd2{
+         
+            background-color: blueviolet;
+            width: 30px;  
+            margin-left: 340px;
+            text-align: center; 
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .cd3{
+            background-color:darkslategray;
+            width: 30px;
+            text-align: center;
+            margin-left: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+
+        }
+        .cd4{
+           
+            background-color: blueviolet;  
+            width: 70px;
+            margin-left: 300px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 20px;
+    
+        }
+        .cd5{
+            
+            background-color: blueviolet;
+            width: 120px;
+            margin-left: 250px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 20px;
+            
+        }
+        .cd6{
+            background-color:darkslategray;
+            width: 100px;
+            border-radius: 10px;
+            text-align: center;
+            margin-left: 30px;
+            margin-top: 40px;
+        }
+        .cd7{
+            background-color: blueviolet;
+            text-align: center;
+            width: 30px;
+            margin-left: 340px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .cd8{
+            background-color:darkslategray;
+            text-align:center;
+            border-radius: 10px;
+            width:170px;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        .cd9{
+            background-color: blueviolet;
+            text-align: center;
+            width: 55px;
+            margin-left: 320px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .e1{
+            margin-top: -16px;
+            margin-left: 120px;
+            background-color: darkslategray;
+            width: 20px;
+            border-radius: 40%;
+            font-size: 15px;
+        }
+        .e2{
+            margin-top: 0px;
+            margin-left: 350px;
+            width: 20px;
+            border-radius: 40%;
+            font-size: 15px;
+            background-color: blueviolet;
+        }
+        .dp1{
+            float:left;
+            margin-top: 18px; 
+        }
+
+        .border1{
+            height: 40px;
+            width:380px;
+            background-color: black;
+            margin-top: 188px;
+            position: fixed;
+        }
+        .camera{
+            margin-left: 56px;
+            margin-top: 5px;
+            color: cornflowerblue;
+            font-size: 22px;
+            position: fixed;
+        }
+        .add{
+            margin-top: 5px;
+            font-size: 22px;
+            margin-left: 20px;
+            color:cornflowerblue;
+            position: fixed;
+        }
+        .gallery{
+            margin-top: 5px;
+            margin-left: 100px;
+            color: cornflowerblue;
+            font-size: 22px;
+            position: fixed;
+        }
+        .mic{
+            margin-top: 5px;
+            margin-left: 145px;
+            font-size: 22px;
+            color: cornflowerblue;
+            position: fixed;
+        }
+        .border2{
+            width: 120px;
+            height: 25px;
+            background-color: darkgray;
+            margin-left: 170px;
+            margin-top: 6px;
+            border-radius: 10px;
+            text-align: left;
+        }
+        .Thumb{
+            margin-top: -29px; 
+            margin-left: 335px;
+            color: cornflowerblue;
+            position: fixed;
+        }
+        .msg{
+            margin-top: -22px;
+            margin-left: 180px;
+            color: whitesmoke;
+            position: fixed
+        }
+        .smile{
+            color: cornflowerblue;
+            margin-top:-23px ;
+            margin-left: 300px;
+            
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="md" style="color: white; background-color:black;">
+        <div class="ab"></div>
+        <div class="arrow"><i class="fa fa-arrow-left"></i></div>
+        <div class="video"><i class="fa fa-video-camera"></i></div>
+        <div class="call"><i class="fa fa-phone"></i></div>
+        <div class="dp"><img height="35px" width="35px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="info"><i class="fa fa-info-circle"></i></div>
+        <div class="name">Vinila🖤...</div>
+        <div class="dp2"><img height="100px" width="100px"style=border-radius:100%; src="./c7.jpeg"></div>
+        <div class="text1">VINILA PENDLI</div>
+        <div class="text2">Facebook</div>
+        <div class="text3">You're friends on Facebook</div>
+        <div class="text4">VIEW PROFILE</div>
+   
+       <div class="border1">
+        <div class="camera"><i class="fa fa-camera"></i></div>
+        <div class="add"><i class="fa fa-plus-circle"></i></div>
+        <div class="gallery"><i class="fa fa-image"></i></div>
+        <div class="mic"><i class="fa fa-microphone"></i></div>
+        <div class="border2"></div>
+        <div class="msg">Message</div>
+        <div class="Thumb"><i class="fa fa-thumbs-up" style="font-size:30px"></i></div>
+        <div class="smile"><i class="fa fa-smile-o" style="font-size:26px"></i></div>
+    </div>
+
+        <div class="d1">28 DEC AT 12:00 AM </div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="/c7.jpeg"></div>
+        <div class="cd1">Hii</div>
+        <div class="cd2"><p>hi</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd3"><p>hru</p></div>
+        <div class="cd4"><p>am gd</p></div>
+        <div class="cd5"><p>what about you?</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd6"><p>yaa am fine</p></div>
+        <div class="e1">👍</div>
+        <div class="cd7"><p>Ha</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd8"><p>its been long time since i talked to you</p></div>
+        <div class="cd9">yes🙂</div>
+
+        <div class="d2">22 JAN AT 2:00 PM</div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd1">Hii</div>
+        <div class="cd2"><p>hi</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd3"><p>hru</p></div>
+        <div class="cd4"><p>am gd</p></div>
+        <div class="cd5"><p>what about you?</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd6"><p>yaa am fine</p></div>
+        <div class="e1">👍</div>
+        <div class="cd7"><p>Ha</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd8"><p>its been long time since i talked to you</p></div>
+        <div class="cd9">yes🙂</div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd1">Hii</div>
+        <div class="cd2"><p>hi</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd3"><p>hru</p></div>
+        <div class="cd4"><p>am gd</p></div>
+        <div class="cd5"><p>what about you?</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd6"><p>yaa am fine</p></div>
+        <div class="e1">👍</div>
+        <div class="cd7"><p>Ha</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd8"><p>its been long time since i talked to you</p></div>
+        <div class="cd9">yes🙂</div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd1">Hii</div>
+        <div class="cd2"><p>hi</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd3"><p>hru</p></div>
+        <div class="cd4"><p>am gd</p></div>
+        <div class="cd5"><p>what about you?</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd6"><p>yaa am fine</p></div>
+        <div class="e1">👍</div>
+        <div class="cd7"><p>Ha</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd8"><p>its been long time since i talked to you</p></div>
+        <div class="cd9">yes🙂</div>
+
+        <div class="d3">6 FEB 12:00 AM</div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd1">Hii</div>
+        <div class="cd2"><p>hi</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd3"><p>hru</p></div>
+        <div class="cd4"><p>am gd</p></div>
+        <div class="cd5"><p>what about you?</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd6"><p>yaa am fine</p></div>
+        <div class="e1">👍</div>
+        <div class="cd7"><p>Ha</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd8"><p>its been long time since i talked to you</p></div>
+        <div class="cd9">yes🙂</div> <div class="dp1"><img height="30px" width="30px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd1">Hii</div>
+        <div class="cd2"><p>hi</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd3"><p>hru</p></div>
+        <div class="cd4"><p>am gd</p></div>
+        <div class="cd5"><p>what about you?</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd6"><p>yaa am fine</p></div>
+        <div class="cd7"><p>Ha</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd8"><p>its been long time since i talked to you</p></div>
+        <div class="cd9">yes🙂</div> <div class="dp1"><img height="30px" width="30px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd1">Hii</div>
+        <div class="cd2"><p>hi</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd3"><p>hru</p></div>
+        <div class="cd4"><p>am gd</p></div>
+        <div class="cd5"><p>what about you?</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd6"><p>yaa am fine</p></div>
+        <div class="e1">👍</div>
+        <div class="cd7"><p>Ha</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd8"><p>its been long time since i talked to you</p></div>
+        <div class="cd9">yes</div>
+
+        <div class="d4">10 MARCH AT 2:00 PM</div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd1">Hii</div>
+        <div class="cd2"><p>hi</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd3"><p>hru</p></div>
+        <div class="cd4"><p>am gd</p></div>
+        <div class="cd5"><p>what about you?</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd6"><p>yaa am fine</p></div>
+        <div class="e1">👍</div>
+        <div class="cd7"><p>Ha</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd8"><p>its been long time since i talked to you</p></div>
+        <div class="cd9">yes🙂</div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd1">Hii</div>
+        <div class="cd2"><p>hi</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd3"><p>hru</p></div>
+        <div class="cd4"><p>am gd</p></div>
+        <div class="cd5"><p>what about you?</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd6"><p>yaa am fine</p></div>
+        <div class="e1">👍</div>
+        <div class="cd7"><p>Ha</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd8"><p>its been long time since i talked to you</p></div>
+        <div class="cd9">yes🙂</div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd1">Hii</div>
+        <div class="cd2"><p>hi</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd3"><p>hru</p></div>
+        <div class="cd4"><p>am gd</p></div>
+        <div class="cd5"><p>what about you?</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd6"><p>yaa am fine</p></div>
+        <div class="e1">👍</div>
+        <div class="cd7"><p>Ha</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd8"><p>its been long time since i talked to you</p></div>
+        <div class="cd9">yes</div>
+        <div class="d4">21 MARCH 2:00 PM</div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd1">Hii</div>
+        <div class="cd2"><p>hi</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd3"><p>hru</p></div>
+        <div class="cd4"><p>am gd</p></div>
+        <div class="cd5"><p>what about you?</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd6"><p>yaa am fine</p></div>
+        <div class="e1">👍</div>
+        <div class="cd7"><p>Ha</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd8"><p>its been long time since i talked to you</p></div>
+        <div class="cd9">yes</div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd1">Hii</div>
+        <div class="cd2"><p>hi</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd3"><p>hru</p></div>
+        <div class="cd4"><p>am gd</p></div>
+        <div class="cd5"><p>what about you?</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd6"><p>yaa am fine</p></div>
+        <div class="e1">👍</div>
+        <div class="cd7"><p>Ha</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd8"><p>its been long time since i talked to you</p></div>
+        <div class="cd9">yes</div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd1">Hii</div>
+        <div class="cd2"><p>hi</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd3"><p>hru</p></div>
+        <div class="cd4"><p>am gd</p></div>
+        <div class="cd5"><p>what about you?</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd6"><p>yaa am fine</p></div>
+        <div class="e1">👍</div>
+        <div class="cd7"><p>Ha</p></div>
+        <div class="dp1"><img height="28px" width="28px" style="border-radius: 100%;" src="./c7.jpeg"></div>
+        <div class="cd8"><p>its been long time since i talked to you</p></div>
+        <div class="cd9">yes🙂</div>
+        <div class="e2">🖤</div>
+        <div class="cd9">yes</div>  
+    </div>
+</body>
+</html>
